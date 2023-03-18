@@ -23,3 +23,28 @@
 - Have strong technical skills in software development, including programming languages such as Python or Java, web development frameworks such as React or Angular, and database management systems 
 - Work closely with the project manager and UX Designer to ensure that the software solution meets the project requirements 
 - Ensure that the software solution is scalable and maintainable.
+
+##Group Assignments
+- Team Management - Ethan Sinson
+- Project Management - Ethan Sinson
+- Project Requirement Analysis - Ethan Sinson
+- DevOps and Site Reliability - Johanathan Grossman
+- Product Development - Emmanuel Chiobi
+
+##Repository for the Project
+- https://github.com/EDS435/mywebclass-simulation-intermediate
+
+#Contact Information
+###Ethan T. Sinson
+- Email: ets6@njit.edu 
+- Contact References: Email
+
+###Emmanuel Chiobi
+- Email: ec362@njit.edu 
+- Contact References: Email
+
+###Jonathon Grossman
+- Email:jg836@njit.edu 
+- Contact References: Email
+
+
