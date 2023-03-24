@@ -2,10 +2,10 @@ import Link from "next/link";
 function Header() {
   return (
     <header role="banner" class="top-0 w-screen">
-      <nav role="navigation" aria-label="Main navigation" class=" bg-gray-800">
+      <nav role="navigation" aria-label="Main navigation" class="bg-gray-900">
         <div class="mx-auto px-4">
           <div class="px-80 flex justify-between items-center py-4">
-            <Link class="text-white text-xl font-bold leading-none" href="/">
+            <Link class="text-white text-xl font-semi leading-none" href="/">
               MyWebClass.org
             </Link>
             <button

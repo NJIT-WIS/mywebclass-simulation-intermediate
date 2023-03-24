@@ -8,13 +8,13 @@ function HomePage() {
       <div class="mx-auto container w-4/6 h-screen">
         <div class="mt-24 mx-auto h-4/6 bg-white rounded-lg shadow-2xl overflow-hidden">
           <div class="flex flex-col md:flex-row h-full">
-            <div class="basis-3/4 my-auto pl-10">
+            <div class="basis-4/6 my-auto pl-10">
               <div class="tracking-wide text-black-500 font-bold">
                 <h1 class="text-4xl hero-title">Revolutionize your teaching</h1>
               </div>
               <a
                 href="#"
-                class="block mt-4 md:w-4/6 leading-7 text-lg font-medium text-black hover:underline"
+                class="block mt-4 md:w-5/6 leading-7 text-lg font-medium text-black hover:underline"
               >
                 Empower your students with cutting-edge software engineering
                 skills. Join MyWebClass and discover advanced technologies that
@@ -26,7 +26,7 @@ function HomePage() {
                 </button>
               </div>
             </div>
-            <div class="basis-2/4">
+            <div class="basis-2/6">
               <img
                 class="h-full w-full"
                 src="/images/teacher.gif"
