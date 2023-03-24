@@ -1,10 +1,10 @@
 function Footer() {
   return (
     <div>
-      <footer class="ml-72 py-5 container">
+      <footer class="mt-10 py-5 mx-auto">
         <div class="grid grid-cols-1 sm:grid-cols-3">
           <div>
-            <h5 class="text-lg font-bold mb-4">About Us</h5>
+            <h5 class="text-sm mb-4">About Us</h5>
             <ul class="flex flex-col gap-1">
               <li class="mb-2">
                 <a href="story.html" class="text-gray-500 hover:text-gray-800">
@@ -22,7 +22,7 @@ function Footer() {
             </ul>
           </div>
           <div class="sm:col-span-1">
-            <h5 class="text-lg font-bold mb-4">Share on Social Media</h5>
+            <h5 class="text-sm mb-4">Share on Social Media</h5>
             <ul class="flex flex-row gap-2">
               <li>
                 <a href="#" class="text-gray-500 hover:text-gray-800">
@@ -43,9 +43,7 @@ function Footer() {
           </div>
           <div class="sm:col-span-1">
             <form>
-              <h5 class="text-lg font-bold mb-4">
-                Subscribe to our newsletter
-              </h5>
+              <h5 class="text-sm mb-4">Subscribe to our newsletter</h5>
               <p class="mb-4">
                 Monthly digest of what's new and exciting from us.
               </p>
