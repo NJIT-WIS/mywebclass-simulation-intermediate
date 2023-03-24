@@ -1,7 +1,7 @@
 import Link from "next/link";
 function Header() {
   return (
-    <header role="banner" class="top-0 w-screen">
+    <header role="banner" class="sticky top-0 w-screen">
       <nav role="navigation" aria-label="Main navigation" class="bg-gray-900">
         <div class="mx-auto px-4">
           <div class="px-80 flex justify-between items-center py-4">
