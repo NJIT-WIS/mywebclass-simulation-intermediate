@@ -4,7 +4,7 @@ import Header from "../components/Header";
 import TableOfContents from "../components/TableOfContents";
 function Content() {
   return (
-    <div>
+    <div class="h-full">
       <Header />
       <div class="mx-auto container w-5/6 h-screen">
         <div class="flex flex-row">
