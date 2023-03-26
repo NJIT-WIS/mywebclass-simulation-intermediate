@@ -1,16 +1,7 @@
 // @ts-check
 const { test, expect } = require("@playwright/test");
 
-test("Measures page metrics", async ({ page }) => {
-  const options = {
-    headless: true,
-    executablePath: "/path/to/chromium",
-  };
-
-  // Launch the browser with the options.
-  const browser = await page.context().newBrowser(options);
-
-  await page.goto("https://example.com");
+  await page.goto("mywebclass.org");
 
   // Measure page load time.
   const loadTime = await page
