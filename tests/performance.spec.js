@@ -1,7 +1,8 @@
 const { test, expect } = require("@playwright/test");
-const { default: lighthouse } = await import("lighthouse/core");
 
 test("Measures page metrics", async ({ page }) => {
+  const lighthouse = require("lighthouse/core");
+
   const { lhr } = await lighthouse(page, {
     port: new URL(page.url()).port,
     plugins: [loadLighthousePlugin("lighthouse-plugin-field-performance")],
