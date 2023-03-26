@@ -1,0 +1,24 @@
+name: Run Playwright Tests
+
+on:
+  push:
+    branches: [tailwindcss]
+
+jobs:
+  playwright:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "14"
+      - run: npm install
+      - run: npm run build
+      - run: npm run test
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PLAYWRIGHT_GITHUB_TOKEN: ${{ secrets.PLAYWRIGHT_GITHUB_TOKEN }}
+      - uses: peaceiris/actions-gh-pages@v3
+        with:
+          personal_token: ${{ secrets.GH_PAGES_TOKEN }}
+          publish_dir: ./test-results
