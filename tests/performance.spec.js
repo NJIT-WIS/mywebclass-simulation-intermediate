@@ -1,5 +1,5 @@
 const { test, expect } = require("@playwright/test");
-const { lighthouse, loadLighthousePlugin } = require("playwright-lighthouse");
+const { default: lighthouse } = await import("lighthouse/core");
 
 test("Measures page metrics", async ({ page }) => {
   const { lhr } = await lighthouse(page, {
