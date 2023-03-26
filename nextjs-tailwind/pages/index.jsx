@@ -1,9 +1,15 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import Head from 'next/head';
 
 function HomePage() {
   return (
     <div>
+      <Head>
+        <title>My Webclass Homepage</title>
+        <meta name="description" content="Revolutionize your teaching with cutting-edge software engineering skills. Join MyWebClass and discover advanced technologies that will transform your teaching and their learning journey." />
+        <meta name="keywords" content="MyWebClass, software engineering skills, teaching, learning journey, advanced technologies, students, education, online learning, e-learning, web development, coding, programming, curriculum, courses, tutorials, instructors, education technology, virtual classroom, distance learning, student engagement" />
+      </Head>
       <Header />
       <div class="mx-auto container w-4/6 h-screen">
         <div class="mt-24 mx-auto h-4/6 bg-white rounded-lg shadow-2xl overflow-hidden">
