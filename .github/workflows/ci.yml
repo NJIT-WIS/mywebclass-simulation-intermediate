@@ -12,6 +12,7 @@ jobs:
           node-version: 18.x
       - name: npm install, build
         run: |
+          cd nextjs-tailwind
           npm install
           npm run build
       - name: run Lighthouse CI
