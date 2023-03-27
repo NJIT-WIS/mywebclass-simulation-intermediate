@@ -1,7 +1,13 @@
 {
+  "/content": "pages/content.html",
+  "/": "pages/index.html",
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
+<<<<<<< HEAD
   "/content": "pages/content.js",
   "/": "pages/index.js"
+=======
+  "/404": "pages/404.html"
+>>>>>>> 6f66b5540804f9c1185fee28809018f4b1176a4e
 }

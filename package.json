@@ -7,10 +7,14 @@
     "test": "tests"
   },
   "scripts": {
+    "test:lighthouse": "lighthouse http://localhost:3000 --output html --output-path lighthouse-report.html --chrome-flags=\"--headless --no-sandbox --disable-gpu\"",
     "test": "npx standard && npx playwright test --config=playwright.config.js",
-    "start": "webpack serve --open --config webpack.config.dev.js",
-    "build": "webpack  --config webpack.config.prod.js",
-    "grade": "python -m pytest -c pytest_grade.ini && npx playwright test --config=playwright_grade.config.js"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "build-start": "next build && next start",
+    "grade": "python -m pytest -c pytest_grade.ini && npx playwright test --config=playwright_grade.config.js",
+    "test:report": "playwright test --reporter=list --output=test-results/"
   },
   "standard": {
     "ignore": [
@@ -47,7 +51,9 @@
     "imagemin-mozjpeg": "^10.0.0",
     "imagemin-pngquant": "^9.0.2",
     "imagemin-webpack-plugin": "^2.4.2",
+    "lighthouse": "^10.1.0",
     "mini-css-extract-plugin": "^2.7.2",
+    "playwright-lighthouse": "^2.2.2",
     "postcss-loader": "^7.0.2",
     "purgecss-webpack-plugin": "^5.0.0",
     "sass": "^1.58.3",
@@ -61,6 +67,7 @@
     "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
-    "@popperjs/core": "^2.11.6"
+    "@popperjs/core": "^2.11.6",
+    "playwright": "^1.32.1"
   }
 }
