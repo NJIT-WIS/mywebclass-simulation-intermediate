@@ -7,10 +7,12 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "npx playwright test tests/performance.spec.js --config=playwright.config.js",
+    "test:lighthouse": "lighthouse http://localhost:3000 --output html --output-path lighthouse-report.html --chrome-flags=\"--headless --no-sandbox --disable-gpu\"",
+    "test": "npx standard && npx playwright test --config=playwright.config.js",
     "start": "webpack serve --open --config webpack.config.dev.js",
     "build": "webpack  --config webpack.config.prod.js",
-    "grade": "python -m pytest -c pytest_grade.ini && npx playwright test --config=playwright_grade.config.js"
+    "grade": "python -m pytest -c pytest_grade.ini && npx playwright test --config=playwright_grade.config.js",
+    "test:report": "playwright test --reporter=list --output=test-results/"
   },
   "standard": {
     "ignore": [
