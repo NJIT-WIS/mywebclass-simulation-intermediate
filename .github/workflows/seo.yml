@@ -20,21 +20,22 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y libgbm-dev         
+          cd nextjs-tailwind
           npm ci
           npx playwright install chromium
           npm install -g lighthouse chrome-launcher axe-core chromium wait-on
 
       - name: Start the application
-        run: npm run start & npx wait-on http://localhost:3000
+        run: cd nextjs-tailwind && npm run start & npx wait-on http://localhost:3000
 
       - name: Run Tests
-        run: npx playwright test tests/seo
+        run: cd nextjs-tailwind && npx playwright test tests/seo
 
       - name: Generate Lighthouse Report
-        run: npm run test:lighthouse
+        run: cd nextjs-tailwind && npm run test:lighthouse
 
       - name: Upload report, screenshots and videos of failed tests
         uses: actions/upload-artifact@v3
         with:
           name: Lighthouse report
-          path: lighthouse-report.html
+          path: nextjs-tailwind/lighthouse-report.html
