@@ -33,12 +33,3 @@ jobs:
 
       # - name: Run Tests
       #   run: cd nextjs-tailwind && npx playwright test tests/seo
-
-      - name: Generate Lighthouse Report
-        run: cd nextjs-tailwind && npm run test:lighthouse
-
-      - name: Upload report, screenshots and videos of failed tests
-        uses: actions/upload-artifact@v3
-        with:
-          name: Lighthouse report
-          path: nextjs-tailwind/lighthouse-report.html
