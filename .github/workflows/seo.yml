@@ -25,8 +25,11 @@ jobs:
           npx playwright install chromium
           npm install -g lighthouse chrome-launcher axe-core chromium wait-on
 
-      - name: Start the application
+      - name: Build the application
         run: cd nextjs-tailwind && npm run build
+
+      - name: Start server
+        run: cd nextjs-tailwind && npm run start
 
       - name: Run Tests
         run: cd nextjs-tailwind && npx playwright test tests/seo
