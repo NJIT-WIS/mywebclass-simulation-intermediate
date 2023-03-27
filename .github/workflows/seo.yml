@@ -1,7 +1,8 @@
 name: SEO Tests
 
 on:
-  workflow_dispatch:
+  push:
+    branches: [tailwindcss]
 
 jobs:
   test:
