@@ -11,7 +11,7 @@
     "test": "npx standard && npx playwright test --config=playwright.config.js",
     "dev": "next dev",
     "build": "next build && next export",
-    "start": "next start --port 80",
+    "start": "next start --port 3000",
     "build-start": "next build && next start",
     "grade": "python -m pytest -c pytest_grade.ini && npx playwright test --config=playwright_grade.config.js",
     "test:report": "playwright test --reporter=list --output=test-results/"
