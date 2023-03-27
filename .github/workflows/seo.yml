@@ -26,7 +26,7 @@ jobs:
           npm install -g lighthouse chrome-launcher axe-core chromium wait-on
 
       - name: Start the application
-        run: cd nextjs-tailwind && npm run build-start && npx wait-on http://localhost:3000
+        run: cd nextjs-tailwind && npm run build-start
 
       - name: Run Tests
         run: cd nextjs-tailwind && npx playwright test tests/seo
